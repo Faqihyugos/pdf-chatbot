@@ -1,0 +1,9 @@
+services:
+  app:
+    container_name: pdf-chatbot
+    build:
+      context: .
+    ports:
+      - 8501:8501
+    env_file:
+      - .env
